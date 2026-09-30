@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { Logo } from "@/components/brand/logo";
 import { useT } from "@/lib/i18n";
 import { useStore } from "@/lib/store";
@@ -105,10 +105,6 @@ export function SiteHeader() {
   const addresses = useStore(addressesStore);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const [barHidden, setBarHidden] = useState(false);
-  const modesBarRef = useRef<HTMLDivElement>(null);
-  const lastScrollY = useRef(0);
-  const accumulated = useRef(0);
 
   const itemCount = cart.lines.reduce((sum, line) => sum + line.quantity, 0);
   const defaultAddress = addresses.find((address) => address.isDefault) ?? addresses[0];
@@ -118,51 +114,6 @@ export function SiteHeader() {
   const showModes = ["/", "/pickup", "/shops", "/products", "/restaurants", "/search"].some(
     (path) => pathname === path || (path !== "/" && pathname.startsWith(path) && !pathname.startsWith("/restaurants/"))
   );
-
-  useEffect(() => {
-    setBarHidden(false);
-    accumulated.current = 0;
-    lastScrollY.current = typeof window !== "undefined" ? window.scrollY : 0;
-  }, [pathname]);
-
-  useEffect(() => {
-    if (!showModes || menuOpen) {
-      setBarHidden(false);
-      return;
-    }
-
-    lastScrollY.current = window.scrollY;
-    accumulated.current = 0;
-
-    const onScroll = () => {
-      const y = Math.max(0, window.scrollY);
-      const delta = y - lastScrollY.current;
-      lastScrollY.current = y;
-
-      if (y <= 8) {
-        accumulated.current = 0;
-        setBarHidden(false);
-        return;
-      }
-
-      // Reset accumulator when direction flips (mobile fires tiny deltas)
-      if ((delta > 0 && accumulated.current < 0) || (delta < 0 && accumulated.current > 0)) {
-        accumulated.current = 0;
-      }
-      accumulated.current += delta;
-
-      if (accumulated.current > 24) {
-        accumulated.current = 0;
-        setBarHidden(true);
-      } else if (accumulated.current < -24) {
-        accumulated.current = 0;
-        setBarHidden(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [showModes, menuOpen, pathname]);
 
   function onSearch(event: FormEvent) {
     event.preventDefault();
@@ -260,12 +211,8 @@ export function SiteHeader() {
 
       {showModes && (
         <div
-          ref={modesBarRef}
           data-site-sticky
-          className={cn(
-            "sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)] transition-transform duration-300 ease-out will-change-transform",
-            barHidden && "-translate-y-full pointer-events-none"
-          )}
+          className="sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)]"
         >
           <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-2 sm:px-6 md:flex-row md:items-center md:justify-between">
             <nav aria-label="Ordering mode" className="flex gap-1 overflow-x-auto no-scrollbar">
