@@ -1,7 +1,12 @@
 #!/bin/bash -e
 
-# If running the rails server then create or migrate existing database
-if [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; then
+# Thruster reads HTTP_PORT (default 80). Railway / most PaaS inject PORT instead.
+if [ -n "${PORT:-}" ] && [ -z "${HTTP_PORT:-}" ]; then
+  export HTTP_PORT="${PORT}"
+fi
+
+# If running the rails server (directly or via Thruster), create/migrate the database.
+if [ "${1}" == "./bin/thrust" ] || { [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; }; then
   ./bin/rails db:prepare
 fi
 

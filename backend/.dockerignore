@@ -37,9 +37,11 @@
 /config/deploy*.yml
 /.kamal
 
+# Ignore vendored gems (installed during image build via bundle install).
+/vendor/bundle
+
 # Ignore development files
 /.devcontainer
 
-# Ignore Docker-related files
-/.dockerignore
-/Dockerfile*
+# Keep Dockerfile in context metadata; do not COPY it into the image layers via broad globs.
+# (Explicit COPY paths above never include these.)
