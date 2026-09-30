@@ -10,10 +10,13 @@ if [ "${1}" == "./bin/thrust" ] || { [ "${@: -2:1}" == "./bin/rails" ] && [ "${@
   echo "docker-entrypoint: preparing databases..."
   ./bin/rails db:prepare
 
-  # Shared DATABASE_URL (Neon): secondary Solid schemas are not created by primary
-  # prepare alone — migrate each connection explicitly.
+  # Shared Neon DATABASE_URL: migrate each Solid connection with UNIQUE migration versions
+  # (same schema_migrations table — colliding versions would skip later migrates).
+  echo "docker-entrypoint: migrating cache..."
   ./bin/rails db:migrate:cache
+  echo "docker-entrypoint: migrating queue..."
   ./bin/rails db:migrate:queue
+  echo "docker-entrypoint: migrating cable..."
   ./bin/rails db:migrate:cable
   echo "docker-entrypoint: databases ready"
 fi
