@@ -2,29 +2,42 @@
 
 # Inserts foods until the table has TARGET products, each with a white-background image.
 # Idempotent: skips existing slugs; safe to re-run.
+# Prefers Cloudinary URLs from db/seeds/cloudinary_food_images.json (after `rails cloudinary:upload_foods`).
 
 TARGET = 1000
-IMAGE_BASE = "/foods/white-bg"
+
+CLOUDINARY_MAP = begin
+  path = Rails.root.join("db/seeds/cloudinary_food_images.json")
+  path.exist? ? JSON.parse(File.read(path)) : {}
+rescue StandardError
+  {}
+end.freeze
+
+def cloudinary_or_local(filename)
+  local = "/foods/white-bg/#{filename}"
+  CLOUDINARY_MAP[local] || CLOUDINARY_MAP[filename] || local
+end
 
 IMAGE_BY_KEY = {
-  "amok" => "#{IMAGE_BASE}/food-amok.png",
-  "lok_lak" => "#{IMAGE_BASE}/food-lok-lak.png",
-  "noodles" => "#{IMAGE_BASE}/food-noodles.png",
-  "burger" => "#{IMAGE_BASE}/food-burger.png",
-  "pizza" => "#{IMAGE_BASE}/food-pizza.png",
-  "boba" => "#{IMAGE_BASE}/food-boba.png",
-  "bbq" => "#{IMAGE_BASE}/food-bbq.png",
-  "sushi" => "#{IMAGE_BASE}/food-sushi.png",
-  "fried_chicken" => "#{IMAGE_BASE}/food-fried-chicken.png",
-  "coffee" => "#{IMAGE_BASE}/food-coffee.png",
-  "thai_curry" => "#{IMAGE_BASE}/food-thai-curry.png",
-  "dumplings" => "#{IMAGE_BASE}/food-dumplings.png",
-  "dessert" => "#{IMAGE_BASE}/food-dessert.png",
-  "healthy" => "#{IMAGE_BASE}/food-healthy.png",
-  "bakery" => "#{IMAGE_BASE}/food-bakery.png",
-  "grocery" => "#{IMAGE_BASE}/food-grocery.png",
-  "breakfast" => "#{IMAGE_BASE}/food-breakfast.png",
-  "vegetarian" => "#{IMAGE_BASE}/food-vegetarian.png"
+  "amok" => cloudinary_or_local("food-amok.png"),
+  "lok_lak" => cloudinary_or_local("food-lok-lak.png"),
+  "noodles" => cloudinary_or_local("food-noodles.png"),
+  "burger" => cloudinary_or_local("food-burger.png"),
+  "pizza" => cloudinary_or_local("food-pizza.png"),
+  "boba" => cloudinary_or_local("food-boba.png"),
+  "bbq" => cloudinary_or_local("food-bbq.png"),
+  "sushi" => cloudinary_or_local("food-sushi.png"),
+  "fried_chicken" => cloudinary_or_local("food-fried-chicken.png"),
+  "coffee" => cloudinary_or_local("food-coffee.png"),
+  "thai_curry" => cloudinary_or_local("food-thai-curry.png"),
+  "dumplings" => cloudinary_or_local("food-dumplings.png"),
+  "dessert" => cloudinary_or_local("food-dessert.png"),
+  "healthy" => cloudinary_or_local("food-healthy.png"),
+  "bakery" => cloudinary_or_local("food-bakery.png"),
+  "grocery" => cloudinary_or_local("food-grocery.png"),
+  "breakfast" => cloudinary_or_local("food-breakfast.png"),
+  "vegetarian" => cloudinary_or_local("food-vegetarian.png"),
+  "fries" => cloudinary_or_local("food-fries.png")
 }.freeze
 
 # Realistic dish templates: [name, description, category, base_price, emoji, image_key]
@@ -172,11 +185,13 @@ restaurants = Restaurant.order(:id).to_a
 raise "No restaurants found. Seed the catalogue first." if restaurants.empty?
 
 ActiveRecord::Base.transaction do
-  # Attach white-background photos to existing foods.
+  # Attach white-background photos to existing foods (upgrade relative paths to Cloudinary).
   Food.find_each do |food|
-    next if food.image_url.present?
+    desired = image_for_existing(food)
+    next if food.image_url == desired
+    next if food.image_url.to_s.start_with?("http") && !desired.start_with?("http")
 
-    food.update!(image_url: image_for_existing(food))
+    food.update!(image_url: desired)
   end
 
   needed = TARGET - Food.count
