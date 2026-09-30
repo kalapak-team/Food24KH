@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" fill="none" role="img" aria-label="Food24KH Fast Fresh For You">
+  <defs>
+    <linearGradient id="navyDark" x1="40" y1="20" x2="40" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E8ECFF"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="40" y1="40" x2="80" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#FF8A00"/>
+    </linearGradient>
+    <linearGradient id="textWhite" x1="180" y1="30" x2="180" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F0F3FF"/>
+    </linearGradient>
+    <linearGradient id="textGoldDark" x1="330" y1="30" x2="330" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#FF8A00"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="58" width="34" height="11" rx="5.5" fill="url(#goldDark)"/>
+  <rect x="8" y="76" width="24" height="11" rx="5.5" fill="url(#goldDark)"/>
+  <rect x="8" y="94" width="30" height="11" rx="5.5" fill="url(#goldDark)"/>
+
+  <path d="M58 48c0-14 11-24 26-24h18c15 0 26 10 26 24" stroke="url(#navyDark)" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M52 52h88c6 0 10 5 8 11l-10 34c-2 8-10 13-18 13H70c-9 0-16-7-16-16V62c0-5.5 4.5-10 10-10Z" fill="url(#navyDark)"/>
+  <path d="M58 98h70c7 0 11 8 7 14L98 148c-4 6-13 6-17 0L58 116c-4-6 0-18 0-18Z" fill="url(#goldDark)"/>
+
+  <text x="168" y="92" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="72" font-weight="900" letter-spacing="-2.5">
+    <tspan fill="url(#textWhite)">Food</tspan><tspan fill="url(#textGoldDark)">24</tspan><tspan fill="url(#textWhite)">KH</tspan>
+  </text>
+
+  <text x="168" y="128" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" letter-spacing="4.5" fill="#C9D2FF">FAST</text>
+  <circle cx="248" cy="123" r="3.5" fill="url(#goldDark)"/>
+  <text x="260" y="128" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" letter-spacing="4.5" fill="#C9D2FF">FRESH</text>
+  <circle cx="368" cy="123" r="3.5" fill="url(#goldDark)"/>
+  <text x="380" y="128" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" letter-spacing="4.5" fill="#C9D2FF">FOR YOU</text>
+</svg>

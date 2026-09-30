@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: food24kh-postgres
+    restart: unless-stopped
+    ports:
+      # Host 5432 is occupied/broken on this machine; use 5433 for local Rails.
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: food24kh_development
+    volumes:
+      - food24kh_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d food24kh_development"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  food24kh_pg_data:

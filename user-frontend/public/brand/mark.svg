@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Food24KH">
+  <defs>
+    <linearGradient id="navy" x1="40" y1="10" x2="40" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E3AD0"/>
+      <stop offset="1" stop-color="#0A1B7A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="30" y1="30" x2="90" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#FF8A00"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="42" width="28" height="10" rx="5" fill="url(#gold)"/>
+  <rect x="6" y="58" width="20" height="10" rx="5" fill="url(#gold)"/>
+  <rect x="6" y="74" width="24" height="10" rx="5" fill="url(#gold)"/>
+  <path d="M48 36c0-12 9-20 22-20h14c13 0 22 8 22 20" stroke="url(#navy)" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M42 40h72c5 0 8 4 7 9l-8 28c-2 7-8 11-15 11H56c-8 0-14-6-14-14V48c0-4.4 3.6-8 8-8Z" fill="url(#navy)"/>
+  <path d="M48 78h56c6 0 9 7 5 12L82 116c-3 5-11 5-14 0L48 94c-4-5 0-16 0-16Z" fill="url(#gold)"/>
+</svg>

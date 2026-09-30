@@ -1,0 +1,4201 @@
+{
+  "cuisines": [
+    {
+      "slug": "khmer",
+      "name": "Khmer",
+      "nameKm": "ម្ហូបខ្មែរ",
+      "emoji": "🍲"
+    },
+    {
+      "slug": "chinese",
+      "name": "Chinese",
+      "nameKm": "ម្ហូបចិន",
+      "emoji": "🥟"
+    },
+    {
+      "slug": "thai",
+      "name": "Thai",
+      "nameKm": "ម្ហូបថៃ",
+      "emoji": "🍛"
+    },
+    {
+      "slug": "korean",
+      "name": "Korean",
+      "nameKm": "ម្ហូបកូរ៉េ",
+      "emoji": "🍖"
+    },
+    {
+      "slug": "japanese",
+      "name": "Japanese",
+      "nameKm": "ម្ហូបជប៉ុន",
+      "emoji": "🍣"
+    },
+    {
+      "slug": "fast-food",
+      "name": "Fast Food",
+      "nameKm": "អាហាររហ័ស",
+      "emoji": "🍟"
+    },
+    {
+      "slug": "pizza",
+      "name": "Pizza",
+      "nameKm": "ភីហ្សា",
+      "emoji": "🍕"
+    },
+    {
+      "slug": "burgers",
+      "name": "Burgers",
+      "nameKm": "ប៊ឺហ្គឺ",
+      "emoji": "🍔"
+    },
+    {
+      "slug": "noodles",
+      "name": "Noodles",
+      "nameKm": "មី និងគុយទាវ",
+      "emoji": "🍜"
+    },
+    {
+      "slug": "fried-chicken",
+      "name": "Fried Chicken",
+      "nameKm": "មាន់បំពង",
+      "emoji": "🍗"
+    },
+    {
+      "slug": "coffee",
+      "name": "Coffee",
+      "nameKm": "កាហ្វេ",
+      "emoji": "☕"
+    },
+    {
+      "slug": "drinks",
+      "name": "Drinks & Milk Tea",
+      "nameKm": "ភេសជ្ជៈ",
+      "emoji": "🧋"
+    },
+    {
+      "slug": "desserts",
+      "name": "Desserts",
+      "nameKm": "បង្អែម",
+      "emoji": "🍰"
+    },
+    {
+      "slug": "breakfast",
+      "name": "Breakfast",
+      "nameKm": "អាហារពេលព្រឹក",
+      "emoji": "🍳"
+    },
+    {
+      "slug": "healthy",
+      "name": "Healthy",
+      "nameKm": "អាហារសុខភាព",
+      "emoji": "🥗"
+    },
+    {
+      "slug": "vegetarian",
+      "name": "Vegetarian",
+      "nameKm": "អាហារបួស",
+      "emoji": "🥦"
+    }
+  ],
+  "shopTypes": [
+    {
+      "slug": "convenience",
+      "name": "Convenience",
+      "nameKm": "ហាងលក់ទំនិញ",
+      "emoji": "🏪"
+    },
+    {
+      "slug": "grocery",
+      "name": "Grocery",
+      "nameKm": "គ្រឿងទេស និងម្ហូបអាហារ",
+      "emoji": "🛒"
+    },
+    {
+      "slug": "fresh-market",
+      "name": "Fresh Market",
+      "nameKm": "ផ្សារស្រស់",
+      "emoji": "🥬"
+    },
+    {
+      "slug": "bakery",
+      "name": "Bakery",
+      "nameKm": "នំប៉័ង",
+      "emoji": "🥐"
+    },
+    {
+      "slug": "flowers",
+      "name": "Flowers",
+      "nameKm": "ផ្កា",
+      "emoji": "💐"
+    },
+    {
+      "slug": "gifts",
+      "name": "Gifts",
+      "nameKm": "កាដូ",
+      "emoji": "🎁"
+    },
+    {
+      "slug": "health-beauty",
+      "name": "Health & Beauty",
+      "nameKm": "សុខភាព និងសម្ផស្ស",
+      "emoji": "🧴"
+    },
+    {
+      "slug": "pet-shop",
+      "name": "Pet Shop",
+      "nameKm": "ហាងសត្វចិញ្ចឹម",
+      "emoji": "🐾"
+    }
+  ],
+  "cities": [
+    "Phnom Penh",
+    "Siem Reap",
+    "Battambang",
+    "Sihanoukville",
+    "Kampot",
+    "Kampong Cham",
+    "Ta Khmau",
+    "Poipet"
+  ],
+  "restaurants": [
+    {
+      "slug": "mekong-kitchen",
+      "name": "Mekong Kitchen",
+      "kind": "restaurant",
+      "tags": [
+        "khmer",
+        "noodles"
+      ],
+      "emoji": "🍲",
+      "tint": [
+        "#00008B",
+        "#3B5BDB"
+      ],
+      "rating": 4.8,
+      "reviewCount": 1240,
+      "deliveryMinutes": 25,
+      "deliveryFee": 0.99,
+      "minimumOrder": 5,
+      "priceLevel": 2,
+      "distanceKm": 1.2,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "Up to 25% off",
+      "pickupDiscountPercent": 15,
+      "address": "St. 240, Daun Penh",
+      "city": "Phnom Penh",
+      "description": "Home-style Khmer cooking with fresh kroeung made every morning.",
+      "openingHours": "Daily 07:00 – 22:00"
+    },
+    {
+      "slug": "golden-lotus-noodle-house",
+      "name": "Golden Lotus Noodle House",
+      "kind": "restaurant",
+      "tags": [
+        "chinese",
+        "noodles"
+      ],
+      "emoji": "🍜",
+      "tint": [
+        "#9A3412",
+        "#F59E0B"
+      ],
+      "rating": 4.6,
+      "reviewCount": 860,
+      "deliveryMinutes": 30,
+      "deliveryFee": 1.25,
+      "minimumOrder": 5,
+      "priceLevel": 1,
+      "distanceKm": 2.4,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "promotion": "10% off noodles",
+      "address": "Monivong Blvd, 7 Makara",
+      "city": "Phnom Penh",
+      "description": "Hand-pulled noodles and dumplings folded to order.",
+      "openingHours": "Daily 09:00 – 23:00"
+    },
+    {
+      "slug": "bangkok-street-bites",
+      "name": "Bangkok Street Bites",
+      "kind": "restaurant",
+      "tags": [
+        "thai",
+        "noodles"
+      ],
+      "emoji": "🍛",
+      "tint": [
+        "#047857",
+        "#34D399"
+      ],
+      "rating": 4.5,
+      "reviewCount": 530,
+      "deliveryMinutes": 28,
+      "deliveryFee": 0.99,
+      "minimumOrder": 6,
+      "priceLevel": 2,
+      "distanceKm": 3.1,
+      "isOpen": true,
+      "acceptsVouchers": false,
+      "freeDeliveryFirstOrder": true,
+      "address": "St. 51, BKK1",
+      "city": "Phnom Penh",
+      "description": "Wok-fired Thai street favourites with bold, balanced flavours.",
+      "openingHours": "Daily 10:00 – 22:00"
+    },
+    {
+      "slug": "seoul-grill-bbq",
+      "name": "Seoul Grill BBQ",
+      "kind": "restaurant",
+      "tags": [
+        "korean",
+        "fried-chicken"
+      ],
+      "emoji": "🥩",
+      "tint": [
+        "#7F1D1D",
+        "#EF4444"
+      ],
+      "rating": 4.7,
+      "reviewCount": 710,
+      "deliveryMinutes": 35,
+      "deliveryFee": 1.5,
+      "minimumOrder": 8,
+      "priceLevel": 3,
+      "distanceKm": 4,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "promotion": "15% off pick-up",
+      "pickupDiscountPercent": 15,
+      "address": "Sothearos Blvd, Tonle Bassac",
+      "city": "Phnom Penh",
+      "description": "Charcoal-grilled Korean BBQ, stews and crispy chicken.",
+      "openingHours": "Daily 11:00 – 23:00"
+    },
+    {
+      "slug": "sakura-bento",
+      "name": "Sakura Bento",
+      "kind": "restaurant",
+      "tags": [
+        "japanese",
+        "healthy"
+      ],
+      "emoji": "🍱",
+      "tint": [
+        "#9D174D",
+        "#F472B6"
+      ],
+      "rating": 4.6,
+      "reviewCount": 420,
+      "deliveryMinutes": 32,
+      "deliveryFee": 1.25,
+      "minimumOrder": 7,
+      "priceLevel": 3,
+      "distanceKm": 2.8,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "address": "Norodom Blvd, Chamkarmon",
+      "city": "Phnom Penh",
+      "description": "Bento boxes, sushi rolls and ramen made with care.",
+      "openingHours": "Daily 10:30 – 21:30"
+    },
+    {
+      "slug": "burger-lab-kh",
+      "name": "Burger Lab KH",
+      "kind": "restaurant",
+      "tags": [
+        "burgers",
+        "fast-food"
+      ],
+      "emoji": "🍔",
+      "tint": [
+        "#B45309",
+        "#FBBF24"
+      ],
+      "rating": 4.4,
+      "reviewCount": 980,
+      "deliveryMinutes": 20,
+      "deliveryFee": 0.75,
+      "minimumOrder": 4,
+      "priceLevel": 2,
+      "distanceKm": 0.9,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "Free delivery",
+      "address": "St. 278, BKK1",
+      "city": "Phnom Penh",
+      "description": "Smash burgers, crispy chicken and loaded fries.",
+      "openingHours": "Daily 10:00 – 00:00"
+    },
+    {
+      "slug": "riverside-pizza-co",
+      "name": "Riverside Pizza Co.",
+      "kind": "restaurant",
+      "tags": [
+        "pizza",
+        "fast-food"
+      ],
+      "emoji": "🍕",
+      "tint": [
+        "#991B1B",
+        "#FB923C"
+      ],
+      "rating": 4.5,
+      "reviewCount": 640,
+      "deliveryMinutes": 30,
+      "deliveryFee": 1,
+      "minimumOrder": 6,
+      "priceLevel": 2,
+      "distanceKm": 1.8,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "promotion": "Up to 20% off",
+      "address": "Sisowath Quay, Daun Penh",
+      "city": "Phnom Penh",
+      "description": "Stone-baked pizzas with a local twist.",
+      "openingHours": "Daily 11:00 – 23:00"
+    },
+    {
+      "slug": "morning-bay-cafe",
+      "name": "Morning Bay Café",
+      "kind": "restaurant",
+      "tags": [
+        "coffee",
+        "breakfast"
+      ],
+      "emoji": "☕",
+      "tint": [
+        "#44403C",
+        "#A8A29E"
+      ],
+      "rating": 4.7,
+      "reviewCount": 1105,
+      "deliveryMinutes": 18,
+      "deliveryFee": 0.5,
+      "minimumOrder": 3,
+      "priceLevel": 1,
+      "distanceKm": 0.6,
+      "isOpen": true,
+      "acceptsVouchers": false,
+      "freeDeliveryFirstOrder": true,
+      "address": "St. 63, BKK1",
+      "city": "Phnom Penh",
+      "description": "Specialty coffee, Khmer iced coffee and all-day breakfast.",
+      "openingHours": "Daily 06:30 – 18:00"
+    },
+    {
+      "slug": "sweet-palm-desserts",
+      "name": "Sweet Palm Desserts",
+      "kind": "restaurant",
+      "tags": [
+        "desserts",
+        "khmer"
+      ],
+      "emoji": "🍧",
+      "tint": [
+        "#6D28D9",
+        "#C4B5FD"
+      ],
+      "rating": 4.8,
+      "reviewCount": 390,
+      "deliveryMinutes": 22,
+      "deliveryFee": 0.75,
+      "minimumOrder": 3,
+      "priceLevel": 1,
+      "distanceKm": 1.5,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "promotion": "Buy 2 save 10%",
+      "address": "Russian Market, Tuol Tompoung",
+      "city": "Phnom Penh",
+      "description": "Traditional Khmer sweets and chilled bingsu.",
+      "openingHours": "Daily 10:00 – 22:00"
+    },
+    {
+      "slug": "boba-garden",
+      "name": "Boba Garden",
+      "kind": "restaurant",
+      "tags": [
+        "drinks"
+      ],
+      "emoji": "🧋",
+      "tint": [
+        "#0E7490",
+        "#67E8F9"
+      ],
+      "rating": 4.6,
+      "reviewCount": 1520,
+      "deliveryMinutes": 15,
+      "deliveryFee": 0.5,
+      "minimumOrder": 2,
+      "priceLevel": 1,
+      "distanceKm": 0.8,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "Buy 1 get 1",
+      "pickupDiscountPercent": 20,
+      "address": "Toul Kork Blvd",
+      "city": "Phnom Penh",
+      "description": "Fresh milk teas with house-cooked pearls.",
+      "openingHours": "Daily 09:00 – 22:30"
+    },
+    {
+      "slug": "green-bowl",
+      "name": "Green Bowl",
+      "kind": "restaurant",
+      "tags": [
+        "healthy",
+        "vegetarian"
+      ],
+      "emoji": "🥗",
+      "tint": [
+        "#166534",
+        "#86EFAC"
+      ],
+      "rating": 4.7,
+      "reviewCount": 310,
+      "deliveryMinutes": 25,
+      "deliveryFee": 1,
+      "minimumOrder": 5,
+      "priceLevel": 2,
+      "distanceKm": 2.2,
+      "isOpen": false,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "address": "St. 360, BKK3",
+      "city": "Phnom Penh",
+      "description": "Colourful bowls, spring rolls and cold-pressed juices.",
+      "openingHours": "Mon – Sat 08:00 – 20:00"
+    },
+    {
+      "slug": "crispy-wings-corner",
+      "name": "Crispy Wings Corner",
+      "kind": "restaurant",
+      "tags": [
+        "fried-chicken",
+        "fast-food"
+      ],
+      "emoji": "🍗",
+      "tint": [
+        "#C2410C",
+        "#FDBA74"
+      ],
+      "rating": 4.3,
+      "reviewCount": 770,
+      "deliveryMinutes": 24,
+      "deliveryFee": 0.75,
+      "minimumOrder": 4,
+      "priceLevel": 1,
+      "distanceKm": 3.5,
+      "isOpen": true,
+      "acceptsVouchers": false,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "Up to 15% off",
+      "address": "Street 2004, Sen Sok",
+      "city": "Phnom Penh",
+      "description": "Double-fried wings and chicken rice boxes.",
+      "openingHours": "Daily 10:00 – 23:00"
+    },
+    {
+      "slug": "daily-mart-express",
+      "name": "Daily Mart Express",
+      "kind": "shop",
+      "tags": [
+        "convenience",
+        "grocery"
+      ],
+      "emoji": "🛒",
+      "tint": [
+        "#00008B",
+        "#60A5FA"
+      ],
+      "rating": 4.5,
+      "reviewCount": 2100,
+      "deliveryMinutes": 20,
+      "deliveryFee": 0.99,
+      "minimumOrder": 3,
+      "priceLevel": 1,
+      "distanceKm": 0.7,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "Up to 20% off essentials",
+      "address": "Mao Tse Toung Blvd",
+      "city": "Phnom Penh",
+      "description": "Everyday essentials, snacks and drinks delivered fast.",
+      "openingHours": "Open 24 hours"
+    },
+    {
+      "slug": "fresh-field-market",
+      "name": "Fresh Field Market",
+      "kind": "shop",
+      "tags": [
+        "fresh-market",
+        "grocery"
+      ],
+      "emoji": "🥬",
+      "tint": [
+        "#15803D",
+        "#BBF7D0"
+      ],
+      "rating": 4.6,
+      "reviewCount": 640,
+      "deliveryMinutes": 35,
+      "deliveryFee": 1.25,
+      "minimumOrder": 5,
+      "priceLevel": 1,
+      "distanceKm": 2.9,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "address": "Orussey Market area",
+      "city": "Phnom Penh",
+      "description": "Fresh vegetables, fruit, meat and seafood from local farms.",
+      "openingHours": "Daily 06:00 – 20:00"
+    },
+    {
+      "slug": "bloom-and-petal",
+      "name": "Bloom & Petal",
+      "kind": "shop",
+      "tags": [
+        "flowers",
+        "gifts"
+      ],
+      "emoji": "💐",
+      "tint": [
+        "#BE185D",
+        "#FBCFE8"
+      ],
+      "rating": 4.9,
+      "reviewCount": 210,
+      "deliveryMinutes": 45,
+      "deliveryFee": 1.5,
+      "minimumOrder": 10,
+      "priceLevel": 3,
+      "distanceKm": 3.8,
+      "isOpen": true,
+      "acceptsVouchers": false,
+      "freeDeliveryFirstOrder": false,
+      "address": "St. 57, BKK1",
+      "city": "Phnom Penh",
+      "description": "Hand-tied bouquets and potted orchids for every occasion.",
+      "openingHours": "Daily 08:00 – 20:00"
+    },
+    {
+      "slug": "sunrise-bakery",
+      "name": "Sunrise Bakery",
+      "kind": "shop",
+      "tags": [
+        "bakery"
+      ],
+      "emoji": "🥐",
+      "tint": [
+        "#92400E",
+        "#FDE68A"
+      ],
+      "rating": 4.7,
+      "reviewCount": 530,
+      "deliveryMinutes": 20,
+      "deliveryFee": 0.75,
+      "minimumOrder": 3,
+      "priceLevel": 1,
+      "distanceKm": 1.1,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "address": "St. 108, Wat Phnom",
+      "city": "Phnom Penh",
+      "description": "Fresh baguettes, pastries and cakes baked daily.",
+      "openingHours": "Daily 06:00 – 19:00"
+    },
+    {
+      "slug": "petpal-supply",
+      "name": "PetPal Supply",
+      "kind": "shop",
+      "tags": [
+        "pet-shop"
+      ],
+      "emoji": "🐾",
+      "tint": [
+        "#1E3A8A",
+        "#93C5FD"
+      ],
+      "rating": 4.6,
+      "reviewCount": 180,
+      "deliveryMinutes": 40,
+      "deliveryFee": 1.25,
+      "minimumOrder": 5,
+      "priceLevel": 2,
+      "distanceKm": 4.4,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": false,
+      "address": "Russian Blvd, Toul Kork",
+      "city": "Phnom Penh",
+      "description": "Food, litter, toys and care products for your pets.",
+      "openingHours": "Daily 09:00 – 21:00"
+    },
+    {
+      "slug": "care-plus",
+      "name": "Care Plus Health & Beauty",
+      "kind": "shop",
+      "tags": [
+        "health-beauty"
+      ],
+      "emoji": "🧴",
+      "tint": [
+        "#0F766E",
+        "#99F6E4"
+      ],
+      "rating": 4.5,
+      "reviewCount": 340,
+      "deliveryMinutes": 30,
+      "deliveryFee": 0.99,
+      "minimumOrder": 4,
+      "priceLevel": 2,
+      "distanceKm": 1.9,
+      "isOpen": true,
+      "acceptsVouchers": true,
+      "freeDeliveryFirstOrder": true,
+      "promotion": "10% off skincare",
+      "address": "Kampuchea Krom Blvd",
+      "city": "Phnom Penh",
+      "description": "Personal care, skincare and everyday health products.",
+      "openingHours": "Daily 08:00 – 22:00"
+    }
+  ],
+  "foods": [
+    {
+      "id": "mekong-kitchen--fish-amok",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Signature Dishes",
+      "name": "Fish Amok",
+      "description": "Steamed curried fish custard in banana leaf with coconut and kroeung.",
+      "price": 5.5,
+      "emoji": "🐟",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "mekong-kitchen--beef-lok-lak",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Signature Dishes",
+      "name": "Beef Lok Lak",
+      "description": "Wok-seared pepper beef with lime-pepper dip, fried egg and rice.",
+      "price": 5,
+      "discountPrice": 4.25,
+      "emoji": "🥩",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "mekong-kitchen--samlor-korko",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Signature Dishes",
+      "name": "Samlor Korko",
+      "description": "Hearty Khmer vegetable soup with roasted rice powder.",
+      "price": 4.5,
+      "emoji": "🥣",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "mekong-kitchen--bai-sach-chrouk",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Rice & Noodles",
+      "name": "Bai Sach Chrouk",
+      "description": "Grilled coconut-garlic pork over broken rice with pickles.",
+      "price": 3.5,
+      "emoji": "🍚",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "mekong-kitchen--phnom-penh-kuy-teav",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Rice & Noodles",
+      "name": "Phnom Penh Kuy Teav",
+      "description": "Clear pork broth, rice noodles, fresh herbs and garlic oil.",
+      "price": 3.75,
+      "emoji": "🍜",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "egg",
+          "name": "Soft-boiled egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-noodles",
+          "name": "Extra noodles",
+          "price": 0.75
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "mekong-kitchen--nom-banh-chok",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Rice & Noodles",
+      "name": "Nom Banh Chok",
+      "description": "Fresh rice noodles with green fish curry and herbs.",
+      "price": 3.25,
+      "emoji": "🍝",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "mekong-kitchen--iced-palm-sugar-coffee",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Drinks",
+      "name": "Iced Palm Sugar Coffee",
+      "description": "Strong Khmer coffee sweetened with Kampong Speu palm sugar.",
+      "price": 1.75,
+      "emoji": "☕",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "mekong-kitchen--fresh-sugarcane-juice",
+      "restaurantSlug": "mekong-kitchen",
+      "category": "Drinks",
+      "name": "Fresh Sugarcane Juice",
+      "description": "Pressed to order with a squeeze of kumquat.",
+      "price": 1.25,
+      "emoji": "🥤",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "golden-lotus-noodle-house--hand-pulled-beef-noodle-soup",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Noodles",
+      "name": "Hand-pulled Beef Noodle Soup",
+      "description": "Slow-braised beef, rich broth and chewy hand-pulled noodles.",
+      "price": 4.5,
+      "emoji": "🍜",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "egg",
+          "name": "Soft-boiled egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-noodles",
+          "name": "Extra noodles",
+          "price": 0.75
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "golden-lotus-noodle-house--dan-dan-noodles",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Noodles",
+      "name": "Dan Dan Noodles",
+      "description": "Sesame-chilli sauce, minced pork and scallions.",
+      "price": 3.75,
+      "emoji": "🌶️",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "egg",
+          "name": "Soft-boiled egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-noodles",
+          "name": "Extra noodles",
+          "price": 0.75
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "golden-lotus-noodle-house--pork-chive-dumplings-10",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Dumplings & Mains",
+      "name": "Pork & Chive Dumplings (10)",
+      "description": "Pan-fried until crisp, with black vinegar dip.",
+      "price": 3.5,
+      "emoji": "🥟",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "golden-lotus-noodle-house--yangzhou-fried-rice",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Dumplings & Mains",
+      "name": "Yangzhou Fried Rice",
+      "description": "Egg fried rice with shrimp, char siu and spring onion.",
+      "price": 3.75,
+      "emoji": "🍚",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "golden-lotus-noodle-house--mapo-tofu",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Dumplings & Mains",
+      "name": "Mapo Tofu",
+      "description": "Silken tofu in a numbing Sichuan pepper sauce.",
+      "price": 4,
+      "emoji": "🌶️",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "golden-lotus-noodle-house--char-siu-rice",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Dumplings & Mains",
+      "name": "Char Siu Rice",
+      "description": "Honey-glazed roast pork over steamed rice.",
+      "price": 4.25,
+      "discountPrice": 3.6,
+      "emoji": "🍖",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "golden-lotus-noodle-house--chrysanthemum-tea",
+      "restaurantSlug": "golden-lotus-noodle-house",
+      "category": "Drinks",
+      "name": "Chrysanthemum Tea",
+      "description": "Lightly sweet floral tea, served iced.",
+      "price": 1.25,
+      "emoji": "🍵",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "bangkok-street-bites--pad-thai-goong",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Mains",
+      "name": "Pad Thai Goong",
+      "description": "Rice noodles with prawns, tamarind, peanuts and lime.",
+      "price": 4.5,
+      "emoji": "🍤",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "egg",
+          "name": "Soft-boiled egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-noodles",
+          "name": "Extra noodles",
+          "price": 0.75
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "bangkok-street-bites--green-curry-chicken",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Mains",
+      "name": "Green Curry Chicken",
+      "description": "Creamy coconut green curry with Thai basil.",
+      "price": 4.75,
+      "emoji": "🍛",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "bangkok-street-bites--tom-yum-soup",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Mains",
+      "name": "Tom Yum Soup",
+      "description": "Hot and sour lemongrass soup with prawns.",
+      "price": 5,
+      "emoji": "🥘",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "bangkok-street-bites--basil-pork-with-fried-egg",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Mains",
+      "name": "Basil Pork with Fried Egg",
+      "description": "Holy basil stir-fry over jasmine rice.",
+      "price": 4,
+      "discountPrice": 3.4,
+      "emoji": "🍳",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "bangkok-street-bites--mango-sticky-rice",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Desserts & Drinks",
+      "name": "Mango Sticky Rice",
+      "description": "Sweet coconut sticky rice with ripe mango.",
+      "price": 3,
+      "emoji": "🥭",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bangkok-street-bites--thai-iced-tea",
+      "restaurantSlug": "bangkok-street-bites",
+      "category": "Desserts & Drinks",
+      "name": "Thai Iced Tea",
+      "description": "Strong orange tea with condensed milk.",
+      "price": 1.75,
+      "emoji": "🧋",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "seoul-grill-bbq--beef-bulgogi-set",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "BBQ Sets",
+      "name": "Beef Bulgogi Set",
+      "description": "Sweet soy marinated beef with rice and banchan.",
+      "price": 7.5,
+      "emoji": "🥩",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "seoul-grill-bbq--stone-pot-bibimbap",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "BBQ Sets",
+      "name": "Stone-pot Bibimbap",
+      "description": "Sizzling rice bowl with vegetables, beef and egg.",
+      "price": 5.5,
+      "emoji": "🍲",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "seoul-grill-bbq--korean-fried-chicken-half",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "Chicken & Stews",
+      "name": "Korean Fried Chicken (Half)",
+      "description": "Double-fried, glazed in sweet-spicy gochujang.",
+      "price": 8,
+      "discountPrice": 6.8,
+      "emoji": "🍗",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "seoul-grill-bbq--kimchi-jjigae",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "Chicken & Stews",
+      "name": "Kimchi Jjigae",
+      "description": "Bubbling kimchi stew with pork and tofu.",
+      "price": 5,
+      "emoji": "🥘",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "seoul-grill-bbq--tteokbokki",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "Chicken & Stews",
+      "name": "Tteokbokki",
+      "description": "Chewy rice cakes in spicy red sauce.",
+      "price": 4,
+      "emoji": "🌶️",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "seoul-grill-bbq--iced-yuzu-tea",
+      "restaurantSlug": "seoul-grill-bbq",
+      "category": "Drinks",
+      "name": "Iced Yuzu Tea",
+      "description": "Refreshing citrus tea.",
+      "price": 2,
+      "emoji": "🍹",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "sakura-bento--salmon-teriyaki-bento",
+      "restaurantSlug": "sakura-bento",
+      "category": "Bento & Rice",
+      "name": "Salmon Teriyaki Bento",
+      "description": "Glazed salmon, rice, salad and pickles.",
+      "price": 6.5,
+      "emoji": "🍱",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "sakura-bento--chicken-katsu-curry",
+      "restaurantSlug": "sakura-bento",
+      "category": "Bento & Rice",
+      "name": "Chicken Katsu Curry",
+      "description": "Crispy cutlet with mild Japanese curry.",
+      "price": 5.75,
+      "emoji": "🍛",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "sakura-bento--salmon-avocado-roll-8",
+      "restaurantSlug": "sakura-bento",
+      "category": "Sushi & Ramen",
+      "name": "Salmon Avocado Roll (8)",
+      "description": "Fresh salmon, avocado and sesame.",
+      "price": 5,
+      "emoji": "🍣",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sakura-bento--tonkotsu-ramen",
+      "restaurantSlug": "sakura-bento",
+      "category": "Sushi & Ramen",
+      "name": "Tonkotsu Ramen",
+      "description": "Creamy pork bone broth with chashu and egg.",
+      "price": 6,
+      "discountPrice": 5.1,
+      "emoji": "🍜",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "egg",
+          "name": "Soft-boiled egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-noodles",
+          "name": "Extra noodles",
+          "price": 0.75
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "price": 1
+        }
+      ]
+    },
+    {
+      "id": "sakura-bento--edamame",
+      "restaurantSlug": "sakura-bento",
+      "category": "Sushi & Ramen",
+      "name": "Edamame",
+      "description": "Steamed soybeans with sea salt.",
+      "price": 2,
+      "emoji": "🫛",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sakura-bento--matcha-latte",
+      "restaurantSlug": "sakura-bento",
+      "category": "Drinks",
+      "name": "Matcha Latte",
+      "description": "Stone-ground matcha with fresh milk.",
+      "price": 2.5,
+      "emoji": "🍵",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "burger-lab-kh--classic-beef-burger",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Burgers",
+      "name": "Classic Beef Burger",
+      "description": "Beef patty, lettuce, tomato and house sauce.",
+      "price": 4.5,
+      "emoji": "🍔",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "cheese",
+          "name": "Cheese",
+          "price": 0.5
+        },
+        {
+          "id": "egg",
+          "name": "Egg",
+          "price": 1
+        },
+        {
+          "id": "extra-chicken",
+          "name": "Extra chicken",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "burger-lab-kh--chicken-burger",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Burgers",
+      "name": "Chicken Burger",
+      "description": "Crispy buttermilk chicken, slaw and pickles.",
+      "price": 4.5,
+      "emoji": "🍔",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "cheese",
+          "name": "Cheese",
+          "price": 0.5
+        },
+        {
+          "id": "egg",
+          "name": "Egg",
+          "price": 1
+        },
+        {
+          "id": "extra-chicken",
+          "name": "Extra chicken",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "burger-lab-kh--double-cheese-smash",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Burgers",
+      "name": "Double Cheese Smash",
+      "description": "Two smashed patties with melted cheddar.",
+      "price": 6.5,
+      "discountPrice": 5.5,
+      "emoji": "🍔",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "choices": [
+            {
+              "id": "regular",
+              "name": "Regular",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 1
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "cheese",
+          "name": "Cheese",
+          "price": 0.5
+        },
+        {
+          "id": "egg",
+          "name": "Egg",
+          "price": 1
+        },
+        {
+          "id": "extra-chicken",
+          "name": "Extra chicken",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "burger-lab-kh--loaded-fries",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Sides & Shakes",
+      "name": "Loaded Fries",
+      "description": "Fries with cheese sauce and crispy shallots.",
+      "price": 2.75,
+      "emoji": "🍟",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "burger-lab-kh--onion-rings",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Sides & Shakes",
+      "name": "Onion Rings",
+      "description": "Beer-battered and golden.",
+      "price": 2.25,
+      "emoji": "🧅",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "burger-lab-kh--chocolate-milkshake",
+      "restaurantSlug": "burger-lab-kh",
+      "category": "Sides & Shakes",
+      "name": "Chocolate Milkshake",
+      "description": "Thick shake made with real ice cream.",
+      "price": 2.75,
+      "emoji": "🥤",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "riverside-pizza-co--margherita",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Pizzas",
+      "name": "Margherita",
+      "description": "Tomato, mozzarella and fresh basil.",
+      "price": 6,
+      "emoji": "🍕",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "pizza-size",
+          "name": "Pizza size",
+          "choices": [
+            {
+              "id": "small",
+              "name": "Small 8\"",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium 10\"",
+              "priceDelta": 2
+            },
+            {
+              "id": "large",
+              "name": "Large 12\"",
+              "priceDelta": 4
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "choices": [
+            {
+              "id": "classic",
+              "name": "Classic",
+              "priceDelta": 0
+            },
+            {
+              "id": "thin",
+              "name": "Thin & crispy",
+              "priceDelta": 0
+            },
+            {
+              "id": "cheese",
+              "name": "Cheese-filled",
+              "priceDelta": 1.5
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "extra-cheese",
+          "name": "Extra cheese",
+          "price": 1
+        },
+        {
+          "id": "mushroom",
+          "name": "Mushrooms",
+          "price": 0.75
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "riverside-pizza-co--pepperoni",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Pizzas",
+      "name": "Pepperoni",
+      "description": "Loaded with pepperoni and mozzarella.",
+      "price": 7.5,
+      "emoji": "🍕",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "pizza-size",
+          "name": "Pizza size",
+          "choices": [
+            {
+              "id": "small",
+              "name": "Small 8\"",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium 10\"",
+              "priceDelta": 2
+            },
+            {
+              "id": "large",
+              "name": "Large 12\"",
+              "priceDelta": 4
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "choices": [
+            {
+              "id": "classic",
+              "name": "Classic",
+              "priceDelta": 0
+            },
+            {
+              "id": "thin",
+              "name": "Thin & crispy",
+              "priceDelta": 0
+            },
+            {
+              "id": "cheese",
+              "name": "Cheese-filled",
+              "priceDelta": 1.5
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "extra-cheese",
+          "name": "Extra cheese",
+          "price": 1
+        },
+        {
+          "id": "mushroom",
+          "name": "Mushrooms",
+          "price": 0.75
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "riverside-pizza-co--kroeung-chicken-pizza",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Pizzas",
+      "name": "Kroeung Chicken Pizza",
+      "description": "Lemongrass chicken, red onion and chilli.",
+      "price": 7.75,
+      "discountPrice": 6.6,
+      "emoji": "🍕",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "pizza-size",
+          "name": "Pizza size",
+          "choices": [
+            {
+              "id": "small",
+              "name": "Small 8\"",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium 10\"",
+              "priceDelta": 2
+            },
+            {
+              "id": "large",
+              "name": "Large 12\"",
+              "priceDelta": 4
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "choices": [
+            {
+              "id": "classic",
+              "name": "Classic",
+              "priceDelta": 0
+            },
+            {
+              "id": "thin",
+              "name": "Thin & crispy",
+              "priceDelta": 0
+            },
+            {
+              "id": "cheese",
+              "name": "Cheese-filled",
+              "priceDelta": 1.5
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "extra-cheese",
+          "name": "Extra cheese",
+          "price": 1
+        },
+        {
+          "id": "mushroom",
+          "name": "Mushrooms",
+          "price": 0.75
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "riverside-pizza-co--seafood-supreme",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Pizzas",
+      "name": "Seafood Supreme",
+      "description": "Prawns, squid and garlic butter.",
+      "price": 8.5,
+      "emoji": "🍤",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "pizza-size",
+          "name": "Pizza size",
+          "choices": [
+            {
+              "id": "small",
+              "name": "Small 8\"",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium 10\"",
+              "priceDelta": 2
+            },
+            {
+              "id": "large",
+              "name": "Large 12\"",
+              "priceDelta": 4
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "choices": [
+            {
+              "id": "classic",
+              "name": "Classic",
+              "priceDelta": 0
+            },
+            {
+              "id": "thin",
+              "name": "Thin & crispy",
+              "priceDelta": 0
+            },
+            {
+              "id": "cheese",
+              "name": "Cheese-filled",
+              "priceDelta": 1.5
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "extra-cheese",
+          "name": "Extra cheese",
+          "price": 1
+        },
+        {
+          "id": "mushroom",
+          "name": "Mushrooms",
+          "price": 0.75
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "riverside-pizza-co--garlic-bread",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Sides",
+      "name": "Garlic Bread",
+      "description": "Toasted with herb butter.",
+      "price": 2.5,
+      "emoji": "🥖",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "riverside-pizza-co--caesar-salad",
+      "restaurantSlug": "riverside-pizza-co",
+      "category": "Sides",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine, parmesan and croutons.",
+      "price": 4,
+      "emoji": "🥗",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--iced-latte",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Coffee",
+      "name": "Iced Latte",
+      "description": "Double espresso over fresh milk and ice.",
+      "price": 2.25,
+      "emoji": "☕",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--coconut-cold-brew",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Coffee",
+      "name": "Coconut Cold Brew",
+      "description": "18-hour cold brew with fresh coconut water.",
+      "price": 2.75,
+      "emoji": "🥥",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--khmer-iced-milk-coffee",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Coffee",
+      "name": "Khmer Iced Milk Coffee",
+      "description": "Dark roast with sweet condensed milk.",
+      "price": 1.5,
+      "emoji": "☕",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--big-breakfast-plate",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Breakfast",
+      "name": "Big Breakfast Plate",
+      "description": "Eggs, sausage, bacon, toast and grilled tomato.",
+      "price": 5.5,
+      "emoji": "🍳",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--avocado-toast",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Breakfast",
+      "name": "Avocado Toast",
+      "description": "Sourdough, smashed avocado and chilli flakes.",
+      "price": 4.25,
+      "emoji": "🥑",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "morning-bay-cafe--butter-croissant",
+      "restaurantSlug": "morning-bay-cafe",
+      "category": "Breakfast",
+      "name": "Butter Croissant",
+      "description": "Flaky, baked every morning.",
+      "price": 1.75,
+      "discountPrice": 1.5,
+      "emoji": "🥐",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--pumpkin-custard",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Khmer Sweets",
+      "name": "Pumpkin Custard",
+      "description": "Steamed palm-sugar custard in a whole pumpkin slice.",
+      "price": 2,
+      "emoji": "🎃",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--coconut-jelly-cup",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Khmer Sweets",
+      "name": "Coconut Jelly Cup",
+      "description": "Silky coconut jelly with fresh coconut flesh.",
+      "price": 1.75,
+      "emoji": "🥥",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--durian-sticky-rice",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Khmer Sweets",
+      "name": "Durian Sticky Rice",
+      "description": "Sticky rice with rich durian cream.",
+      "price": 3.5,
+      "discountPrice": 3,
+      "emoji": "🍚",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--mango-bingsu",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Chilled",
+      "name": "Mango Bingsu",
+      "description": "Shaved milk ice with fresh mango and cream.",
+      "price": 4.5,
+      "emoji": "🍧",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--chocolate-lava-cake",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Chilled",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm cake with a molten centre.",
+      "price": 3.25,
+      "emoji": "🍫",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sweet-palm-desserts--taro-ice-cream",
+      "restaurantSlug": "sweet-palm-desserts",
+      "category": "Chilled",
+      "name": "Taro Ice Cream",
+      "description": "Creamy purple taro scoop.",
+      "price": 2,
+      "emoji": "🍨",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "boba-garden--brown-sugar-pearl-milk",
+      "restaurantSlug": "boba-garden",
+      "category": "Milk Tea",
+      "name": "Brown Sugar Pearl Milk",
+      "description": "Fresh milk with slow-cooked brown sugar pearls.",
+      "price": 2.5,
+      "emoji": "🧋",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "boba-garden--classic-milk-tea",
+      "restaurantSlug": "boba-garden",
+      "category": "Milk Tea",
+      "name": "Classic Milk Tea",
+      "description": "Black tea with creamy milk.",
+      "price": 2,
+      "emoji": "🧋",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "boba-garden--taro-milk-tea",
+      "restaurantSlug": "boba-garden",
+      "category": "Milk Tea",
+      "name": "Taro Milk Tea",
+      "description": "Real taro blended with milk tea.",
+      "price": 2.25,
+      "emoji": "🧋",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "boba-garden--passion-fruit-green-tea",
+      "restaurantSlug": "boba-garden",
+      "category": "Fruit Tea",
+      "name": "Passion Fruit Green Tea",
+      "description": "Jasmine green tea with fresh passion fruit.",
+      "price": 2,
+      "discountPrice": 1.7,
+      "emoji": "🍹",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "boba-garden--strawberry-yogurt-smoothie",
+      "restaurantSlug": "boba-garden",
+      "category": "Fruit Tea",
+      "name": "Strawberry Yogurt Smoothie",
+      "description": "Blended strawberries and yogurt.",
+      "price": 2.75,
+      "emoji": "🍓",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "boba-garden--matcha-cheese-foam",
+      "restaurantSlug": "boba-garden",
+      "category": "Fruit Tea",
+      "name": "Matcha Cheese Foam",
+      "description": "Matcha topped with salty cheese foam.",
+      "price": 2.75,
+      "emoji": "🍵",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "pearls",
+          "name": "Brown sugar pearls",
+          "price": 0.5
+        },
+        {
+          "id": "jelly",
+          "name": "Grass jelly",
+          "price": 0.5
+        },
+        {
+          "id": "cheese-foam",
+          "name": "Cheese foam",
+          "price": 0.75
+        }
+      ]
+    },
+    {
+      "id": "green-bowl--tofu-buddha-bowl",
+      "restaurantSlug": "green-bowl",
+      "category": "Bowls",
+      "name": "Tofu Buddha Bowl",
+      "description": "Crispy tofu, brown rice, greens and peanut dressing.",
+      "price": 5,
+      "emoji": "🥗",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "green-bowl--grilled-chicken-quinoa-bowl",
+      "restaurantSlug": "green-bowl",
+      "category": "Bowls",
+      "name": "Grilled Chicken Quinoa Bowl",
+      "description": "Lean chicken, quinoa and roasted vegetables.",
+      "price": 5.75,
+      "emoji": "🥙",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "green-bowl--vegan-green-curry",
+      "restaurantSlug": "green-bowl",
+      "category": "Bowls",
+      "name": "Vegan Green Curry",
+      "description": "Coconut curry with seasonal vegetables.",
+      "price": 4.75,
+      "emoji": "🍛",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "green-bowl--fresh-spring-rolls-4",
+      "restaurantSlug": "green-bowl",
+      "category": "Light Bites & Juice",
+      "name": "Fresh Spring Rolls (4)",
+      "description": "Rice paper rolls with herbs and tofu.",
+      "price": 3,
+      "emoji": "🥬",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "green-bowl--cold-pressed-green-juice",
+      "restaurantSlug": "green-bowl",
+      "category": "Light Bites & Juice",
+      "name": "Cold-pressed Green Juice",
+      "description": "Kale, apple, cucumber and ginger.",
+      "price": 2.75,
+      "discountPrice": 2.3,
+      "emoji": "🥤",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "green-bowl--fruit-granola-bowl",
+      "restaurantSlug": "green-bowl",
+      "category": "Light Bites & Juice",
+      "name": "Fruit & Granola Bowl",
+      "description": "Yogurt, seasonal fruit and house granola.",
+      "price": 3.75,
+      "emoji": "🍓",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "crispy-wings-corner--6pc-crispy-wings",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Chicken",
+      "name": "6pc Crispy Wings",
+      "description": "Double-fried wings with your choice of heat.",
+      "price": 4.5,
+      "emoji": "🍗",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "crispy-wings-corner--chicken-rice-box",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Chicken",
+      "name": "Chicken Rice Box",
+      "description": "Crispy chicken over garlic rice.",
+      "price": 3.75,
+      "emoji": "🍱",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "id": "fried-egg",
+          "name": "Fried egg",
+          "price": 0.5
+        },
+        {
+          "id": "extra-rice",
+          "name": "Extra rice",
+          "price": 0.5
+        },
+        {
+          "id": "extra-meat",
+          "name": "Extra meat",
+          "price": 1.5
+        }
+      ]
+    },
+    {
+      "id": "crispy-wings-corner--spicy-drumsticks-3",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Chicken",
+      "name": "Spicy Drumsticks (3)",
+      "description": "Juicy drumsticks in chilli glaze.",
+      "price": 4,
+      "discountPrice": 3.4,
+      "emoji": "🌶️",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [
+        {
+          "id": "spice",
+          "name": "Spice level",
+          "choices": [
+            {
+              "id": "mild",
+              "name": "Mild",
+              "priceDelta": 0
+            },
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "hot",
+              "name": "Hot",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "crispy-wings-corner--chicken-popcorn",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Chicken",
+      "name": "Chicken Popcorn",
+      "description": "Bite-size pieces with dipping sauce.",
+      "price": 2.75,
+      "emoji": "🍿",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "crispy-wings-corner--coleslaw",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Sides & Drinks",
+      "name": "Coleslaw",
+      "description": "Creamy and crunchy.",
+      "price": 1.25,
+      "emoji": "🥗",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "crispy-wings-corner--iced-lemon-tea",
+      "restaurantSlug": "crispy-wings-corner",
+      "category": "Sides & Drinks",
+      "name": "Iced Lemon Tea",
+      "description": "Fresh-brewed with lemon.",
+      "price": 1.25,
+      "emoji": "🍋",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [
+        {
+          "id": "cup",
+          "name": "Cup size",
+          "choices": [
+            {
+              "id": "medium",
+              "name": "Medium",
+              "priceDelta": 0
+            },
+            {
+              "id": "large",
+              "name": "Large",
+              "priceDelta": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sweetness",
+          "name": "Sweetness",
+          "choices": [
+            {
+              "id": "less",
+              "name": "Less sweet",
+              "priceDelta": 0
+            },
+            {
+              "id": "normal",
+              "name": "Normal",
+              "priceDelta": 0
+            },
+            {
+              "id": "extra",
+              "name": "Extra sweet",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--drinking-water-1-5l",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Essentials",
+      "name": "Drinking Water 1.5L",
+      "description": "Purified bottled water.",
+      "price": 0.5,
+      "emoji": "💧",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--instant-noodles-5-pack",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Essentials",
+      "name": "Instant Noodles (5-pack)",
+      "description": "Chicken flavour.",
+      "price": 1.75,
+      "emoji": "🍜",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--uht-fresh-milk-1l",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Essentials",
+      "name": "UHT Fresh Milk 1L",
+      "description": "Full cream.",
+      "price": 1.6,
+      "discountPrice": 1.4,
+      "emoji": "🥛",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--potato-chips-100g",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Snacks & Household",
+      "name": "Potato Chips 100g",
+      "description": "Sea salt.",
+      "price": 1.25,
+      "emoji": "🥔",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--chocolate-bar",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Snacks & Household",
+      "name": "Chocolate Bar",
+      "description": "Milk chocolate 45g.",
+      "price": 1,
+      "emoji": "🍫",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "daily-mart-express--tissue-box",
+      "restaurantSlug": "daily-mart-express",
+      "category": "Snacks & Household",
+      "name": "Tissue Box",
+      "description": "3-ply, 150 sheets.",
+      "price": 1.2,
+      "emoji": "🧻",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--morning-glory-bunch",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Vegetables",
+      "name": "Morning Glory (bunch)",
+      "description": "Picked this morning.",
+      "price": 0.5,
+      "emoji": "🥬",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--tomatoes-500g",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Vegetables",
+      "name": "Tomatoes 500g",
+      "description": "Vine-ripened.",
+      "price": 0.9,
+      "emoji": "🍅",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--cambodian-mango-1kg",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Fruits",
+      "name": "Cambodian Mango 1kg",
+      "description": "Sweet Keo Romeat mangoes.",
+      "price": 2,
+      "discountPrice": 1.75,
+      "emoji": "🥭",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--dragon-fruit-1kg",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Fruits",
+      "name": "Dragon Fruit 1kg",
+      "description": "Red flesh variety.",
+      "price": 1.75,
+      "emoji": "🐉",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--chicken-thigh-500g",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Meat & Seafood",
+      "name": "Chicken Thigh 500g",
+      "description": "Boneless, skin-on.",
+      "price": 2.5,
+      "emoji": "🍗",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "fresh-field-market--fresh-prawns-500g",
+      "restaurantSlug": "fresh-field-market",
+      "category": "Meat & Seafood",
+      "name": "Fresh Prawns 500g",
+      "description": "Cleaned and deveined.",
+      "price": 5.5,
+      "emoji": "🦐",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bloom-and-petal--red-rose-bouquet-12",
+      "restaurantSlug": "bloom-and-petal",
+      "category": "Bouquets",
+      "name": "Red Rose Bouquet (12)",
+      "description": "Classic long-stem roses.",
+      "price": 18,
+      "emoji": "🌹",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bloom-and-petal--sunflower-bundle",
+      "restaurantSlug": "bloom-and-petal",
+      "category": "Bouquets",
+      "name": "Sunflower Bundle",
+      "description": "Bright and cheerful.",
+      "price": 12,
+      "emoji": "🌻",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bloom-and-petal--mixed-tulips",
+      "restaurantSlug": "bloom-and-petal",
+      "category": "Bouquets",
+      "name": "Mixed Tulips",
+      "description": "Seasonal colours.",
+      "price": 25,
+      "discountPrice": 22,
+      "emoji": "🌷",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bloom-and-petal--orchid-pot",
+      "restaurantSlug": "bloom-and-petal",
+      "category": "Plants & Gifts",
+      "name": "Orchid Pot",
+      "description": "Phalaenopsis in ceramic pot.",
+      "price": 22,
+      "emoji": "🌸",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "bloom-and-petal--greeting-card",
+      "restaurantSlug": "bloom-and-petal",
+      "category": "Plants & Gifts",
+      "name": "Greeting Card",
+      "description": "Add a handwritten message.",
+      "price": 1.5,
+      "emoji": "💌",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sunrise-bakery--baguette",
+      "restaurantSlug": "sunrise-bakery",
+      "category": "Bread",
+      "name": "Baguette",
+      "description": "Crusty, baked every 2 hours.",
+      "price": 0.75,
+      "emoji": "🥖",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sunrise-bakery--chicken-p-t-sandwich",
+      "restaurantSlug": "sunrise-bakery",
+      "category": "Bread",
+      "name": "Chicken Pâté Sandwich",
+      "description": "Num pang with pickles and chilli.",
+      "price": 2,
+      "emoji": "🥪",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sunrise-bakery--pain-au-chocolat",
+      "restaurantSlug": "sunrise-bakery",
+      "category": "Pastries & Cakes",
+      "name": "Pain au Chocolat",
+      "description": "Buttery with dark chocolate.",
+      "price": 1.5,
+      "emoji": "🥐",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sunrise-bakery--banana-cake-loaf",
+      "restaurantSlug": "sunrise-bakery",
+      "category": "Pastries & Cakes",
+      "name": "Banana Cake Loaf",
+      "description": "Moist and fragrant.",
+      "price": 3.5,
+      "discountPrice": 3,
+      "emoji": "🍌",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "sunrise-bakery--cheesecake-slice",
+      "restaurantSlug": "sunrise-bakery",
+      "category": "Pastries & Cakes",
+      "name": "Cheesecake Slice",
+      "description": "Baked New York style.",
+      "price": 2.75,
+      "emoji": "🍰",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "petpal-supply--dry-dog-food-2kg",
+      "restaurantSlug": "petpal-supply",
+      "category": "Food",
+      "name": "Dry Dog Food 2kg",
+      "description": "Adult formula.",
+      "price": 9.5,
+      "emoji": "🐶",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "petpal-supply--cat-food-pouches-12",
+      "restaurantSlug": "petpal-supply",
+      "category": "Food",
+      "name": "Cat Food Pouches (12)",
+      "description": "Tuna in jelly.",
+      "price": 7,
+      "discountPrice": 6.3,
+      "emoji": "🐱",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "petpal-supply--cat-litter-5l",
+      "restaurantSlug": "petpal-supply",
+      "category": "Care & Toys",
+      "name": "Cat Litter 5L",
+      "description": "Clumping, low dust.",
+      "price": 4.5,
+      "emoji": "🪣",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "petpal-supply--chew-toy",
+      "restaurantSlug": "petpal-supply",
+      "category": "Care & Toys",
+      "name": "Chew Toy",
+      "description": "Durable rubber bone.",
+      "price": 3,
+      "emoji": "🦴",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "petpal-supply--pet-shampoo",
+      "restaurantSlug": "petpal-supply",
+      "category": "Care & Toys",
+      "name": "Pet Shampoo",
+      "description": "Gentle oatmeal formula.",
+      "price": 5,
+      "emoji": "🧴",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "care-plus--sunscreen-spf50",
+      "restaurantSlug": "care-plus",
+      "category": "Skincare",
+      "name": "Sunscreen SPF50",
+      "description": "Lightweight daily protection.",
+      "price": 8.5,
+      "discountPrice": 7.6,
+      "emoji": "☀️",
+      "popular": true,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "care-plus--face-masks-50",
+      "restaurantSlug": "care-plus",
+      "category": "Skincare",
+      "name": "Face Masks (50)",
+      "description": "3-ply disposable.",
+      "price": 3.5,
+      "emoji": "😷",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "care-plus--vitamin-c-1000mg",
+      "restaurantSlug": "care-plus",
+      "category": "Health & Personal Care",
+      "name": "Vitamin C 1000mg",
+      "description": "30 effervescent tablets.",
+      "price": 6,
+      "emoji": "💊",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 10,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "care-plus--hand-sanitizer-250ml",
+      "restaurantSlug": "care-plus",
+      "category": "Health & Personal Care",
+      "name": "Hand Sanitizer 250ml",
+      "description": "70% alcohol.",
+      "price": 2,
+      "emoji": "🧼",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 15,
+      "optionGroups": [],
+      "addons": []
+    },
+    {
+      "id": "care-plus--shampoo-400ml",
+      "restaurantSlug": "care-plus",
+      "category": "Health & Personal Care",
+      "name": "Shampoo 400ml",
+      "description": "Daily care.",
+      "price": 4.5,
+      "emoji": "🧴",
+      "popular": false,
+      "available": true,
+      "prepMinutes": 20,
+      "optionGroups": [],
+      "addons": []
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal-mekong",
+      "title": "Up to 25% off",
+      "subtitle": "Khmer favourites at Mekong Kitchen",
+      "restaurantSlug": "mekong-kitchen",
+      "tint": [
+        "#00008B",
+        "#2F4BFF"
+      ],
+      "emoji": "🍲",
+      "section": "food"
+    },
+    {
+      "id": "deal-burger",
+      "title": "Free delivery",
+      "subtitle": "First order from Burger Lab KH",
+      "restaurantSlug": "burger-lab-kh",
+      "tint": [
+        "#B45309",
+        "#F59E0B"
+      ],
+      "emoji": "🍔",
+      "section": "food"
+    },
+    {
+      "id": "deal-boba",
+      "title": "Buy 1 get 1",
+      "subtitle": "Selected milk teas at Boba Garden",
+      "restaurantSlug": "boba-garden",
+      "tint": [
+        "#0E7490",
+        "#22D3EE"
+      ],
+      "emoji": "🧋",
+      "section": "food"
+    },
+    {
+      "id": "deal-seoul",
+      "title": "15% off pick-up",
+      "subtitle": "Collect your order at Seoul Grill BBQ",
+      "restaurantSlug": "seoul-grill-bbq",
+      "tint": [
+        "#7F1D1D",
+        "#F87171"
+      ],
+      "emoji": "🥩",
+      "section": "food"
+    },
+    {
+      "id": "deal-pizza",
+      "title": "Up to 20% off",
+      "subtitle": "Stone-baked pizzas at Riverside",
+      "restaurantSlug": "riverside-pizza-co",
+      "tint": [
+        "#1E1B4B",
+        "#6366F1"
+      ],
+      "emoji": "🍕",
+      "section": "food"
+    }
+  ],
+  "shopDeals": [
+    {
+      "id": "deal-mart",
+      "title": "Up to 20% off",
+      "subtitle": "Everyday essentials at Daily Mart Express",
+      "restaurantSlug": "daily-mart-express",
+      "tint": [
+        "#00008B",
+        "#3B82F6"
+      ],
+      "emoji": "🛒",
+      "section": "shop"
+    },
+    {
+      "id": "deal-fresh",
+      "title": "Fresh mango season",
+      "subtitle": "Keo Romeat mangoes at Fresh Field",
+      "restaurantSlug": "fresh-field-market",
+      "tint": [
+        "#166534",
+        "#4ADE80"
+      ],
+      "emoji": "🥭",
+      "section": "shop"
+    },
+    {
+      "id": "deal-care",
+      "title": "10% off skincare",
+      "subtitle": "Sun care at Care Plus",
+      "restaurantSlug": "care-plus",
+      "tint": [
+        "#0F766E",
+        "#2DD4BF"
+      ],
+      "emoji": "☀️",
+      "section": "shop"
+    },
+    {
+      "id": "deal-bakery",
+      "title": "Morning bakes",
+      "subtitle": "Fresh baguettes from Sunrise Bakery",
+      "restaurantSlug": "sunrise-bakery",
+      "tint": [
+        "#92400E",
+        "#FBBF24"
+      ],
+      "emoji": "🥖",
+      "section": "shop"
+    }
+  ]
+}
