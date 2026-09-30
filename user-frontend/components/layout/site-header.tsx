@@ -36,7 +36,7 @@ function PartnerBar() {
   const [hidden, setHidden] = useState(false);
   if (hidden) return null;
   return (
-    <div className="bg-primary text-white">
+    <div className="relative bg-primary text-white">
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-10 py-2 text-center text-sm sm:gap-5">
         <p className="font-medium">{t("partnerBar")}</p>
         <Link
@@ -105,8 +105,10 @@ export function SiteHeader() {
   const addresses = useStore(addressesStore);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const [chromeHidden, setChromeHidden] = useState(false);
+  const [barHidden, setBarHidden] = useState(false);
+  const modesBarRef = useRef<HTMLDivElement>(null);
   const lastScrollY = useRef(0);
+  const accumulated = useRef(0);
 
   const itemCount = cart.lines.reduce((sum, line) => sum + line.quantity, 0);
   const defaultAddress = addresses.find((address) => address.isDefault) ?? addresses[0];
@@ -118,29 +120,49 @@ export function SiteHeader() {
   );
 
   useEffect(() => {
-    lastScrollY.current = window.scrollY;
-    const onScroll = () => {
-      if (menuOpen) return;
-      const y = window.scrollY;
-      const delta = y - lastScrollY.current;
-      if (y < 24) {
-        setChromeHidden(false);
-      } else if (delta > 8 && y > 48) {
-        // Finger swipe up / content moves up → free space for browsing
-        setChromeHidden(true);
-      } else if (delta < -8) {
-        setChromeHidden(false);
-      }
-      lastScrollY.current = y;
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [menuOpen, pathname]);
-
-  useEffect(() => {
-    setChromeHidden(false);
+    setBarHidden(false);
+    accumulated.current = 0;
     lastScrollY.current = typeof window !== "undefined" ? window.scrollY : 0;
   }, [pathname]);
+
+  useEffect(() => {
+    if (!showModes || menuOpen) {
+      setBarHidden(false);
+      return;
+    }
+
+    lastScrollY.current = window.scrollY;
+    accumulated.current = 0;
+
+    const onScroll = () => {
+      const y = Math.max(0, window.scrollY);
+      const delta = y - lastScrollY.current;
+      lastScrollY.current = y;
+
+      if (y <= 8) {
+        accumulated.current = 0;
+        setBarHidden(false);
+        return;
+      }
+
+      // Reset accumulator when direction flips (mobile fires tiny deltas)
+      if ((delta > 0 && accumulated.current < 0) || (delta < 0 && accumulated.current > 0)) {
+        accumulated.current = 0;
+      }
+      accumulated.current += delta;
+
+      if (accumulated.current > 24) {
+        accumulated.current = 0;
+        setBarHidden(true);
+      } else if (accumulated.current < -24) {
+        accumulated.current = 0;
+        setBarHidden(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [showModes, menuOpen, pathname]);
 
   function onSearch(event: FormEvent) {
     event.preventDefault();
@@ -154,136 +176,131 @@ export function SiteHeader() {
         .join(", ")}`
     : t("chooseLocation");
 
-  const searchForm = (
-    <form onSubmit={onSearch} role="search" className="relative w-full md:max-w-md">
-      <label htmlFor="site-search" className="sr-only">
-        {onShops ? t("searchShopsPlaceholder") : t("searchPlaceholder")}
-      </label>
-      <Search className="pointer-events-none absolute left-4 top-3 h-5 w-5 text-muted" aria-hidden />
-      <input
-        id="site-search"
-        type="search"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder={onShops ? t("searchShopsPlaceholder") : t("searchPlaceholder")}
-        className="h-11 w-full rounded-full border border-transparent bg-background pl-12 pr-4 text-sm outline-none placeholder:text-muted focus:border-primary focus:bg-card"
-      />
-    </form>
+  const brandRow = (
+    <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
+      <Logo />
+
+      <Link
+        href="/profile/addresses"
+        className="ml-2 hidden min-w-0 max-w-sm items-center gap-2 rounded-full px-3 py-2 text-sm hover:bg-primary-soft md:flex"
+      >
+        <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
+        <span className="truncate font-medium">{locationLabel}</span>
+      </Link>
+
+      <div className="ml-auto flex items-center gap-2">
+        <nav aria-label="Account" className="hidden items-center gap-1 lg:flex">
+          <Link href="/orders" className="flex h-10 items-center gap-1.5 rounded-full px-3 text-sm font-semibold hover:bg-primary-soft">
+            <Receipt className="h-4 w-4 text-primary" aria-hidden /> {t("orders")}
+          </Link>
+          <Link href="/favorites" className="flex h-10 items-center gap-1.5 rounded-full px-3 text-sm font-semibold hover:bg-primary-soft">
+            <Heart className="h-4 w-4 text-primary" aria-hidden /> {t("favorites")}
+          </Link>
+        </nav>
+        <Link
+          href="/login"
+          className="hidden h-10 items-center rounded-full border border-primary px-4 text-sm font-semibold text-primary hover:bg-primary-soft sm:flex"
+        >
+          {t("login")}
+        </Link>
+        <Link
+          href="/register"
+          className="hidden h-10 items-center rounded-full bg-primary px-4 text-sm font-semibold text-white hover:bg-primary-dark sm:flex"
+        >
+          {t("signup")}
+        </Link>
+        <div className="hidden xl:block">
+          <PreferenceSelects />
+        </div>
+        <Link
+          href="/cart"
+          aria-label={`${t("cart")}, ${itemCount} items`}
+          className="relative grid h-11 w-11 place-items-center rounded-full bg-primary-soft text-primary hover:bg-primary hover:text-white"
+        >
+          <ShoppingBag className="h-5 w-5" aria-hidden />
+          {itemCount > 0 && (
+            <span className="absolute -right-0.5 -top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-secondary px-1 text-[11px] font-bold text-slate-950">
+              {itemCount}
+            </span>
+          )}
+        </Link>
+        <button
+          type="button"
+          className="grid h-11 w-11 place-items-center rounded-full hover:bg-primary-soft xl:hidden"
+          aria-label="Open menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(true)}
+        >
+          <Menu className="h-5 w-5" aria-hidden />
+        </button>
+      </div>
+    </div>
   );
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)] transition-transform duration-300 ease-out",
-        !showModes && chromeHidden && "-translate-y-full"
-      )}
-    >
-      <div
-        className={cn(
-          "grid transition-[grid-template-rows] duration-300 ease-out",
-          showModes && chromeHidden ? "grid-rows-[0fr]" : "grid-rows-[1fr]"
-        )}
-      >
-        <div className="min-h-0 overflow-hidden">
-          <div className="relative">
-            <PartnerBar />
-          </div>
-
-          <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
-            <Logo />
-
-            <Link
-              href="/profile/addresses"
-              className="ml-2 hidden min-w-0 max-w-sm items-center gap-2 rounded-full px-3 py-2 text-sm hover:bg-primary-soft md:flex"
-            >
-              <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-              <span className="truncate font-medium">{locationLabel}</span>
-            </Link>
-
-            <div className="ml-auto flex items-center gap-2">
-              <nav aria-label="Account" className="hidden items-center gap-1 lg:flex">
-                <Link href="/orders" className="flex h-10 items-center gap-1.5 rounded-full px-3 text-sm font-semibold hover:bg-primary-soft">
-                  <Receipt className="h-4 w-4 text-primary" aria-hidden /> {t("orders")}
-                </Link>
-                <Link href="/favorites" className="flex h-10 items-center gap-1.5 rounded-full px-3 text-sm font-semibold hover:bg-primary-soft">
-                  <Heart className="h-4 w-4 text-primary" aria-hidden /> {t("favorites")}
-                </Link>
-              </nav>
-              <Link
-                href="/login"
-                className="hidden h-10 items-center rounded-full border border-primary px-4 text-sm font-semibold text-primary hover:bg-primary-soft sm:flex"
-              >
-                {t("login")}
-              </Link>
-              <Link
-                href="/register"
-                className="hidden h-10 items-center rounded-full bg-primary px-4 text-sm font-semibold text-white hover:bg-primary-dark sm:flex"
-              >
-                {t("signup")}
-              </Link>
-              <div className="hidden xl:block">
-                <PreferenceSelects />
-              </div>
-              <Link
-                href="/cart"
-                aria-label={`${t("cart")}, ${itemCount} items`}
-                className="relative grid h-11 w-11 place-items-center rounded-full bg-primary-soft text-primary hover:bg-primary hover:text-white"
-              >
-                <ShoppingBag className="h-5 w-5" aria-hidden />
-                {itemCount > 0 && (
-                  <span className="absolute -right-0.5 -top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-secondary px-1 text-[11px] font-bold text-slate-950">
-                    {itemCount}
-                  </span>
-                )}
-              </Link>
-              <button
-                type="button"
-                className="grid h-11 w-11 place-items-center rounded-full hover:bg-primary-soft xl:hidden"
-                aria-label="Open menu"
-                aria-expanded={menuOpen}
-                onClick={() => setMenuOpen(true)}
-              >
-                <Menu className="h-5 w-5" aria-hidden />
-              </button>
-            </div>
-          </div>
-
-          <Link
-            href="/profile/addresses"
-            className="mx-4 mb-2 flex items-center gap-2 rounded-xl bg-primary-soft px-3 py-2 text-sm md:hidden"
-          >
-            <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-            <span className="truncate font-medium">{locationLabel}</span>
-          </Link>
+    <header className="z-40 bg-card">
+      {/* Scrolls away naturally — no JS height animation (avoids jitter) */}
+      <PartnerBar />
+      {showModes ? brandRow : (
+        <div
+          data-site-sticky
+          className="sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)]"
+        >
+          {brandRow}
         </div>
-      </div>
+      )}
+
+      <Link
+        href="/profile/addresses"
+        className="mx-4 mb-2 flex items-center gap-2 rounded-xl bg-primary-soft px-3 py-2 text-sm md:hidden"
+      >
+        <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
+        <span className="truncate font-medium">{locationLabel}</span>
+      </Link>
 
       {showModes && (
         <div
+          ref={modesBarRef}
+          data-site-sticky
           className={cn(
-            "mx-auto flex max-w-7xl flex-col gap-2 px-4 pb-2 sm:px-6 md:flex-row md:items-center md:justify-between",
-            chromeHidden && "pt-1"
+            "sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)] transition-transform duration-300 ease-out will-change-transform",
+            barHidden && "-translate-y-full pointer-events-none"
           )}
         >
-          <nav aria-label="Ordering mode" className="flex gap-1 overflow-x-auto no-scrollbar">
-            {modes.map(({ href, key, icon: Icon }) => (
-              <Link
-                key={href}
-                href={href}
-                aria-current={activeMode === href ? "page" : undefined}
-                className={cn(
-                  "flex shrink-0 items-center gap-2 whitespace-nowrap border-b-[3px] px-4 py-2.5 text-sm font-semibold",
-                  activeMode === href
-                    ? "border-primary text-primary"
-                    : "border-transparent text-muted hover:text-primary"
-                )}
-              >
-                <Icon className="h-4 w-4" aria-hidden />
-                {t(key)}
-              </Link>
-            ))}
-          </nav>
-          {searchForm}
+          <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-2 sm:px-6 md:flex-row md:items-center md:justify-between">
+            <nav aria-label="Ordering mode" className="flex gap-1 overflow-x-auto no-scrollbar">
+              {modes.map(({ href, key, icon: Icon }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  aria-current={activeMode === href ? "page" : undefined}
+                  className={cn(
+                    "flex shrink-0 items-center gap-2 whitespace-nowrap border-b-[3px] px-4 py-2.5 text-sm font-semibold",
+                    activeMode === href
+                      ? "border-primary text-primary"
+                      : "border-transparent text-muted hover:text-primary"
+                  )}
+                >
+                  <Icon className="h-4 w-4" aria-hidden />
+                  {t(key)}
+                </Link>
+              ))}
+            </nav>
+            <form onSubmit={onSearch} role="search" className="relative w-full md:max-w-md">
+              <label htmlFor="site-search" className="sr-only">
+                {onShops ? t("searchShopsPlaceholder") : t("searchPlaceholder")}
+              </label>
+              <Search className="pointer-events-none absolute left-4 top-3 h-5 w-5 text-muted" aria-hidden />
+              <input
+                id="site-search"
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder={onShops ? t("searchShopsPlaceholder") : t("searchPlaceholder")}
+                className="h-11 w-full rounded-full border border-transparent bg-background pl-12 pr-4 text-sm outline-none placeholder:text-muted focus:border-primary focus:bg-card"
+              />
+            </form>
+          </div>
         </div>
       )}
 

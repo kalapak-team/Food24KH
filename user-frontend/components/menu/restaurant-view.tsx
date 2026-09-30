@@ -48,7 +48,7 @@ export function RestaurantView({ restaurant, initialItemId }: { restaurant: Rest
   }, [restaurant.slug]);
 
   useEffect(() => {
-    const header = document.querySelector("header");
+    const header = document.querySelector<HTMLElement>("[data-site-sticky]") ?? document.querySelector("header");
     if (!header) return;
 
     const sync = () => setHeaderOffset(Math.ceil(header.getBoundingClientRect().height));
