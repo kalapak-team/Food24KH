@@ -189,10 +189,11 @@ export function SiteHeader() {
   );
 
   return (
-    <header className="z-40 bg-card">
+    // `contents` so the sticky bar below is constrained by <body>, not by this header's own height.
+    <header className="contents">
       {/* Scrolls away naturally — no JS height animation (avoids jitter) */}
       <PartnerBar />
-      {showModes ? brandRow : (
+      {showModes ? <div className="bg-card">{brandRow}</div> : (
         <div
           data-site-sticky
           className="sticky top-0 z-40 bg-card shadow-[0_1px_0_var(--border),0_8px_24px_-16px_rgba(0,0,139,0.25)]"
@@ -201,13 +202,15 @@ export function SiteHeader() {
         </div>
       )}
 
-      <Link
-        href="/profile/addresses"
-        className="mx-4 mb-2 flex items-center gap-2 rounded-xl bg-primary-soft px-3 py-2 text-sm md:hidden"
-      >
-        <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
-        <span className="truncate font-medium">{locationLabel}</span>
-      </Link>
+      <div className="bg-card px-4 pb-2 md:hidden">
+        <Link
+          href="/profile/addresses"
+          className="flex items-center gap-2 rounded-xl bg-primary-soft px-3 py-2 text-sm"
+        >
+          <MapPin className="h-4 w-4 shrink-0 text-primary" aria-hidden />
+          <span className="truncate font-medium">{locationLabel}</span>
+        </Link>
+      </div>
 
       {showModes && (
         <div
